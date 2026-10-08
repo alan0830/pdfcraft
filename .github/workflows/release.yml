@@ -62,6 +62,7 @@ jobs:
 
   macos:
     name: macOS universal
+    if: false
     needs: version
     runs-on: macos-15-xlarge  # M2 Pro larger runner; use only in release.yml (actions_macos_xl budget caps spend)
     environment: release
@@ -325,7 +326,7 @@ jobs:
 
   release:
     name: Draft GitHub Release
-    needs: [version, macos, windows, linux, freebsd, web]
+    needs: [version, windows, linux, freebsd, web]
     runs-on: ubuntu-latest
     environment: release
     permissions:
