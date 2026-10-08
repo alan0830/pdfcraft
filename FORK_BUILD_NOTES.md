@@ -7,3 +7,5 @@ The build includes the complete Traditional Chinese (`zh-hant`) UI catalog
 Japanese catalog). On systems with a `zh-TW`/`zh-HK`/`zh-MO` locale the app
 starts in Traditional Chinese automatically; it can also be switched manually
 under Preferences → Interface language → 繁體中文.
+
+Rebuild triggered to fix draft release asset upload.
